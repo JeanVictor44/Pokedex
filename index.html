@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Api key= AIzaSyBvgpKVGTyb4398JHuj1T7aJfZudhAIieo -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Pokedex</title>
+
+</head>
+<body>
+    <div class="pokedex">
+        <div class="pokedex__left">
+            <div class="pokedex__left-top">
+                <div class="pokedex__left-top__flex-container">
+                    <div class="pokedex__big-light">
+                    
+                    </div>
+                    <div class="pokedex__lights-container">
+                        <div class="pokedex__light pokedex__light-red"></div>
+                        <div class="pokedex__light pokedex__light-yellow"></div>
+                        <div class="pokedex__light pokedex__light-green"></div>
+                    </div>
+                </div>      
+                
+            </div>
+
+            <div class="pokedex__left__container-screen">
+                <div class="pokedex__left__container-screen-points">
+                    <div class="pokedex__left__screen-points"></div>
+                    <div class="pokedex__left__screen-points"></div>
+                </div>
+                
+                <input type="checkbox" id="checkbox"/>
+
+                <div class="pokedex__left__screen">
+                    <img class="pokemon-image" src=""/>
+                    <h1 class="error">Pokemon not found!</h1>
+                </div>
+                <div class="pokedex__left__clear-screen"></div>
+
+                <div class="pokedex__left__container-screen__traces">
+                    <div class="pokedex__left__container-screen-trace"></div>
+                    <div class="pokedex__left__container-screen-trace"></div>
+                    <div class="pokedex__left__container-screen-trace"></div>
+                </div>
+            </div>
+
+            <div class="pokedex__controls">
+                <label class="pokedex__light-switch" for="checkbox">ON</label>
+            </div>
+            
+        </div>
+
+        <div class="pokedex__center">
+            <div class="pokedex__center-top">
+                <div class="pokedex__center-top__line"></div>
+            </div>
+             <div class="pokedex__center-bottom" >
+                <div class="pokedex__center__line"></div>
+                <div class="pokedex__center__dash pokedex__center__dash-1"></div>
+                <div class="pokedex__center__dash pokedex__center__dash-2"></div>
+                <div class="pokedex__center__dash pokedex__center__dash-3"></div>
+                <div class="pokedex__center__dash pokedex__center__dash-4"></div>
+            </div>
+        </div>
+        
+        <div class="pokedex__right">
+            <div class="pokedex__pokemon-infos">
+                <p class="field-pokemon-id">ID: </p>
+                <p class="field-pokemon-name">Name: </p>
+                <p class="field-pokemon-ability">Ability: </p>
+                <p class="field-pokemon-type">Type: </p>
+            </div>
+            
+            <div class="pokedex__grid-id">
+                <div class="grid-id__item"></div>
+                <div class="grid-id__item"></div>
+                <div class="grid-id__item"></div>
+                <div class="grid-id__item"></div>
+                <div class="grid-id__item"></div>
+                <div class="grid-id__item"></div>
+                <div class="grid-id__item"></div>
+                <div class="grid-id__item"></div>
+                <div class="grid-id__item"></div>
+                <div class="grid-id__item"></div>
+            </div>
+
+            <div class="pokedex__inputs">
+                <input class="pokedex__search-text" type="text"  disabled/>
+                <button class="pokedex__search-button" disabled></button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
