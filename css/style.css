@@ -135,7 +135,10 @@
     margin:20px 0px 0px 10px;
     border:var(--border-size) solid #000;
 }
-
+.left-svg {
+    width:100%;
+    max-width:900px; 
+}
 /* Pokedex left Screen */
 .pokedex__left__container-screen {
     width: 80%;

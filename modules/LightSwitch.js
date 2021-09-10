@@ -1,4 +1,9 @@
-import { pokeImg, messsageError, searchButton, searchText, switchButton } from './variables.js'
+import { pokeImg, messsageError, searchButton, searchText, switchButton, containerInfos } from './variables.js'
+import { generateIdButton } from './generateIdButton.js'
+import { buttonsId } from './variables.js'
+import { showPokemonIDButton} from './requestPokemon.js'
+
+
 let isOnScreen = false 
 
 
@@ -16,6 +21,14 @@ export const controlInputs = () => {
 
         searchButton.disabled = false
         searchButton.innerHTML = "GO"
+        const ids = generateIdButton()
+        buttonsId.forEach((button, index) => {
+            button.innerHTML = ids[index]
+        })
+        
+        buttonsId.forEach((button) => {
+            button.addEventListener("click",showPokemonIDButton)
+        })
 
     }else {
         searchText.value = ""
@@ -26,6 +39,10 @@ export const controlInputs = () => {
         searchButton.innerHTML = ""
         pokeImg.src= ""
         messsageError.style.display = "none"
+        buttonsId.forEach((button, index) => {
+            button.innerHTML = ""
+        })
+        
     }
 }
 
