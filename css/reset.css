@@ -11,7 +11,7 @@ html,body {
 body {
     display:flex;
     justify-content: center;
-    align-items:center;
-    background-color:#004A80;
+    align-items: center;
+    background:#00000c;
     font-family: "VT323";
 }
