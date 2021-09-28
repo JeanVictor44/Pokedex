@@ -152,7 +152,6 @@
 
 }
 
-
 .pokedex__left__container-screen::before {
     content:"";
     position:absolute; 
@@ -195,6 +194,7 @@
     transition:.5s ease-in-out;
     border-radius:20px;
 }
+
 .pokedex__left__clear-screen {
     --size:25px;
     width:var(--size);
@@ -211,6 +211,7 @@
     font-size:17px;
     color:#fff;
 }
+
 .pokedex__left__container-screen__traces {
     position:absolute;
     width:20%;
@@ -224,6 +225,7 @@
     background-color: #222;
     bottom:0;
 }
+
 .pokedex__left__container-screen-trace:not(:first-child){
     margin-top:5px;
 }
@@ -258,9 +260,11 @@
 [id="checkbox"]:checked+.pokedex__left__screen {
     background-color:var(--screen-on);
 }
+
 [id="checkbox"]:checked~.pokedex__left__clear-screen::before{
     content:"X";
 }
+
 ::selection {
     background-color: transparent;
 }
@@ -269,6 +273,7 @@
     display:none;
     text-align: center;
 }
+
 .pokedex__controls {
     max-width:300px;
     display:flex;
@@ -278,6 +283,7 @@
     padding-top:5px;
  
 }
+
 .controls__long-button {
     width:100%;
     max-width:60px;
@@ -286,9 +292,11 @@
     border:2px solid #111;
     cursor:pointer;
 }
+
 .controls__long-button--red {
     background-color:#E8050A;
 }
+
 .controls__long-button--blue {
     background-color:#005279;
 }
@@ -308,42 +316,53 @@
     font-weight: 500;
     color:#fff;
 }
+
 .joystick-container{
     display:flex;
     justify-content:center;
     align-items:center;
-    
 }
+
 .joystick__vertical{
     background-color:var(--screen-off);
     height:25px;
     width:22px;
+    cursor:pointer;
 }
+
 .joystick__vertical-top {
     border-color:#000 #000 transparent #000;
     border-width:2px 2px 0px 2px;
     border-style: solid solid none solid;
+    box-shadow: 0 -3px 0 #000;
 }
+
 .joystick__vertical-bottom {
     border-color:transparent #000 #000 #000;
     border-width:0px  2px 2px 2px;
     border-style: none solid solid solid;
+    box-shadow: 0 5px 0 #000;
 }
 
 .joystick__horizontal {
     background-color:var(--screen-off);
     width:25px;
     height:22px;
+    cursor:pointer;
 }
+
 .joystick__horizontal-left{
     border-color:#000  transparent #000 #000;
     border-width:2px 0px 2px 2px ;
-    border-style: solid none solid solid ;
+    border-style: solid none solid solid;
+    box-shadow:0 5px 0 #010101;
 }
+
 .joystick__horizontal-right{
     border-color:#000 #000 #000 transparent;
     border-width:2px 2px 2px 0px  ;
     border-style: solid solid solid none;
+    box-shadow:0 5px 0 #010101;
 }
 .joystick-ball {
     width:15px;
