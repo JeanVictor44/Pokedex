@@ -10,4 +10,5 @@ export const fieldPokemonId = document.querySelector('.field-pokemon-id')
 export const fieldPokemonName = document.querySelector('.field-pokemon-name')
 export const fieldPokemonAbility = document.querySelector('.field-pokemon-ability')
 export const fieldPokemonType = document.querySelector('.field-pokemon-type')
-
+export const buttonElarge = document.querySelector('.button-elarge')
+export const buttonDecrease = document.querySelector('.button-decrease')
