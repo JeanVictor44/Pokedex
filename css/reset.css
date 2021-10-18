@@ -12,6 +12,7 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    background:#0c1821;
+    background:url('../assets/background.png');
+    background-size:cover;
     font-family: "VT323";
 }
