@@ -2,7 +2,8 @@ import
 {   fieldPokemonId,
     fieldPokemonName,
     fieldPokemonAbility,
-    fieldPokemonType} from './variables.js'
+    fieldPokemonType } from './variables.js'
+
 
 export const printPokemonInfo = (pokemon) => {
     fieldPokemonId.innerHTML = `ID: ${pokemon.id}`

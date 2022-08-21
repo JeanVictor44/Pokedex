@@ -12,3 +12,4 @@ export const fieldPokemonAbility = document.querySelector('.field-pokemon-abilit
 export const fieldPokemonType = document.querySelector('.field-pokemon-type')
 export const buttonElarge = document.querySelector('.button-elarge')
 export const buttonDecrease = document.querySelector('.button-decrease')
+export const resetButton = document.querySelector('pokedex__left__clear-screen')
